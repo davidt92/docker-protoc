@@ -263,7 +263,7 @@ plugins=grpc+embedded\
 :$OUT_DIR"
         ;;
     "java")
-        GEN_STRING="--grpc_out=$OUT_DIR --${GEN_LANG}_out=$OUT_DIR --plugin=protoc-gen-grpc=`which protoc-gen-grpc-java`"
+        GEN_STRING="--grpc_out=$OUT_DIR --${GEN_LANG}_out=$OUT_DIR --grpc-${GEN_LANG}_out=$OUT_DIR --plugin=protoc-gen-grpc=`which protoc-gen-grpc-java`"
         ;;
     "scala")
         GEN_STRING="--scala_out=$OUT_DIR --plugin=`which protoc-gen-scala`"
